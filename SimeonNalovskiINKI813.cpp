@@ -22,7 +22,7 @@ int main()
     char quit; // za prekin na 
     string g1,g2,g3,g4,g5,g6,g7,g8,g9,g10; // stringovi za ime na grad
     int b1,b2,b3,b4,b5,b6,b7,b8,b9,b10; // cel broj za broj na zaboleni
-    //od red 22 pocnuva vnes na gradovi preku konzola
+    //od red 26 zapocnuva vnes na gradovi i broj na zaboleni preku konzola
     cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g1>>b1; cout<<endl;
     cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
     if(quit=='q') // if ciklus za proverka dali korisnikot saka da vnesi grad so broj na zaboleni 0 
