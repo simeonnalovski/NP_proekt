@@ -186,6 +186,6 @@ for (int i = 0; i < vec.size(); i++)
 	}
    file<<'INKI'<<broj_indeks<<endl; 
   file<<ime<<datum_na_raganje<<endl;  
-file.close();
+file.close(); // zatvoranje na ofstream fili i kraj na programa
 	    return 0;
 }
