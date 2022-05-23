@@ -4,6 +4,9 @@
 #include<ostream>
 #include <iostream>
 #include <map>
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include <vector>
 #include <iterator>
 #include <algorithm> // biblioteka za sortiranje na 
@@ -170,22 +173,28 @@ int main()
 	{
 		cout << vec[i].first << ": " << vec[i].second << endl;
 	}
-    string ime; string prezime; string datum_na_raganje; string broj_indeks;
+   
+    string ime;
+    string prezime;
+    int broj_indeks;
+    int datum_na_raganje;
+string broj = to_string((int) broj_indeks); // pretvoranje na broj na indeks vo string
+
+
 
 cout<<"Vnesi ime i prezime  ";cin>>ime>>prezime;cout<<endl;
 cout<<"Vnesi cifri na broj na indeks: ";cin>>broj_indeks;
 cout<<"Vnesi datum na raganje: ";cin>>datum_na_raganje;
-
+vec.push_back(make_pair(ime,datum_na_raganje));
+vec.push_back(make_pair("INKI",broj_indeks));
 ofstream file; // kreiranje na ofstream file za zapisuvanje na podatoci
- file.open(ime+prezime+"INKI"+broj_indeks+".txt");
+ file.open(ime + prezime + "INKI" + broj + ".txt");
  file<<"Kovid bilans za den 30.05 po broj na zaboleni"<<endl;
-
 for (int i = 0; i < vec.size(); i++)
 	{
 		file << vec[i].first << ": " << vec[i].second << endl;
 	}
-   file<<'INKI'<<broj_indeks<<endl; 
-  file<<ime<<datum_na_raganje<<endl;  
+  
 file.close(); // zatvoranje na ofstream fili i kraj na programa
 	    return 0;
 }
