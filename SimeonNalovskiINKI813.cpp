@@ -22,136 +22,112 @@ bool sortByVal(const pair<string, int> &a,
 
 int main()
 {
-    char quit; // za prekin na 
-    string g1,g2,g3,g4,g5,g6,g7,g8,g9,g10; // stringovi za ime na grad
-    int b1,b2,b3,b4,b5,b6,b7,b8,b9,b10; // cel broj za broj na zaboleni
-    //od red 26 zapocnuva vnes na gradovi i broj na zaboleni preku konzola
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g1>>b1; cout<<endl;
-    cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
-    if(quit=='q') // if ciklus za proverka dali korisnikot saka da vnesi grad so broj na zaboleni 0 
-    {
-        cout<<"Od sega site gradovi imaat po 0 zaboleni"<<endl;
-        cout<<"Vnesi grad: "; cin>>g2; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g3; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g4; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g5; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g6; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g7; cout<<endl;      
-        cout<<"Vnesi grad: "; cin>>g8; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g9; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g10; cout<<endl;
-        b2=0; b3=0;b4=0;b5=0;b6=0;b7=0;b8=0;b9=0;b10=0;
-        goto MAPA;
-    }
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g2>>b2; cout<<endl;
-    cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
-    if(quit=='q')
-    {
-        cout<<"Od sega site gradovi imaat po 0 zaboleni"<<endl;
-        cout<<"Vnesi grad: "; cin>>g3; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g4; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g5; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g6; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g7; cout<<endl;      
-        cout<<"Vnesi grad: "; cin>>g8; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g9; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g10; cout<<endl;
-        b3=0;b4=0;b5=0;b6=0;b7=0;b8=0;b9=0;b10=0;
-        goto MAPA; // bezusloven skok do linija 94, od kade pocnuva kreiranjeto i sortiranjeto na mapata
-    }
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g3>>b3; cout<<endl;
- cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
-    if(quit=='q')
-    {
-        cout<<"Od sega site gradovi imaat po 0 zaboleni"<<endl;
-        cout<<"Vnesi grad: "; cin>>g4; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g5; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g6; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g7; cout<<endl;      
-        cout<<"Vnesi grad: "; cin>>g8; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g9; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g10; cout<<endl;
-       b4=0;b5=0;b6=0;b7=0;b8=0;b9=0;b10=0;
-        goto MAPA;
-    }
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat:"; cin>>g4>>b4; cout<<endl;
-     cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
-    if(quit=='q')
-    {
-        cout<<"Od sega site gradovi imaat po 0 zaboleni"<<endl;
-        cout<<"Vnesi grad: "; cin>>g5; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g6; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g7; cout<<endl;      
-        cout<<"Vnesi grad: "; cin>>g8; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g9; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g10; cout<<endl;
-        b5=0;b6=0;b7=0;b8=0;b9=0;b10=0;
-        goto MAPA;
-    }
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g5>>b5; cout<<endl;
-     cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
-    if(quit=='q')
-    {
-        cout<<"Od sega site gradovi imaat po 0 zaboleni"<<endl;
-        cout<<"Vnesi grad: "; cin>>g6; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g7; cout<<endl;      
-        cout<<"Vnesi grad: "; cin>>g8; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g9; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g10; cout<<endl;
-        b6=0;b7=0;b8=0;b9=0;b10=0;
-        goto MAPA;
-    }
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g6>>b6; cout<<endl;
-     cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
-    if(quit=='q')
-    {
-        cout<<"Od sega site gradovi imaat po 0 zaboleni"<<endl;
-        cout<<"Vnesi grad: "; cin>>g7; cout<<endl;      
-        cout<<"Vnesi grad: "; cin>>g8; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g9; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g10; cout<<endl;
-       b7=0;b8=0;b9=0;b10=0;
-        goto MAPA;
-    }
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g7>>b7; cout<<endl;
-     cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
-    if(quit=='q')
-    {
-        cout<<"Od sega site gradovi imaat po 0 zaboleni"<<endl;      
-        cout<<"Vnesi grad: "; cin>>g8; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g9; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g10; cout<<endl;
-       b8=0;b9=0;b10=0;
-        goto MAPA;
-    }
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g8>>b8; cout<<endl;
-     cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
-    if(quit=='q')
-    {
-        cout<<"Od sega site gradovi imaat po 0 zaboleni"<<endl;
-        cout<<"Vnesi grad: "; cin>>g9; cout<<endl;
-        cout<<"Vnesi grad: "; cin>>g10; cout<<endl;
-        b9=0;b10=0;
-        goto MAPA;
-    }
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g9>>b9; cout<<endl;
-     cout<<"Vnesi q za prekin na vnes na broj na zaboleni (0 e broj na zaboleni)";cin>>quit;
-    if(quit=='q')
-    {
-        cout<<"Od sega site gradovi imaat po 0 zaboleni"<<endl;
-        cout<<"Vnesi grad: "; cin>>g10; cout<<endl;
-        b10=0;
-        goto MAPA;
-    }
-    cout<<"Vnesi grad i broj na zaboleni koi sakas da se ispecatat: "; cin>>g10>>b10; cout<<endl;
-  // kreiranje na mapa
-  MAPA:// label za pocetok na kreiranje na mapa i krajna destinacija na bezusloven skok
-	map<string, int> covid0530 = {
-		{g1,b1},{g2,b2},{g3,b3},{g4,b4},{g5,b5},
-        {g6,b6},{g7,b7},{g8,b8},{g9,b9},{g10,b10}
-	};
+    
+	map<string, int> covid2005_2205 = {
+		{"Skopje",95},{"Bitola",18},{"Prilep",3},{"Stip",5},{"Debar",1},
+        {"Kumanovo",5},{"Ohrid",8},{"Delcevo",2},//{"Tetovo",3},{"Sveti Nikole",1}
+	};//mapa so inicializirani vrednosti
+    //ako se isprisat dvete kosi crti levo od Tetovo, mapata ke gi sodrzi Tetovo i Sveti Nikole, bez dopolnuvanje so gradovi so 0 zaboleni
+int golemina = covid2005_2205.size(); // golemina na mapa, za vo slucaj da treba da se dopolnat gradovi so broj na zaboleni 0
+if(golemina == 9) // if ciklus, za vo slucaj na dopolnuvanje
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0)); // dopolnuvanje spored par na kluc i vrednost
+    goto POPOLNUVANJE; // bezusloven skok do labela za popolnuvanje (linija 87)
+}
+if(golemina == 8)
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    goto POPOLNUVANJE;
+}
+if(golemina == 7)
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Veles",0));
+    goto POPOLNUVANJE;
+}
+if(golemina == 6)
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+    goto POPOLNUVANJE;
+}
+if(golemina == 5)
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+       covid2005_2205.insert(pair<string,int>("Vinica",0));
+    goto POPOLNUVANJE;
+}
+if(golemina == 4)
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+       covid2005_2205.insert(pair<string,int>("Vinica",0));
+    covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
+
+}
+if(golemina == 3)
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+       covid2005_2205.insert(pair<string,int>("Vinica",0));
+    covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
+    covid2005_2205.insert(pair<string,int>("Pehcevo",0));
+
+    goto POPOLNUVANJE;
+}
+if(golemina == 2)
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+       covid2005_2205.insert(pair<string,int>("Vinica",0));
+    covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
+    covid2005_2205.insert(pair<string,int>("Pehcevo",0));
+    covid2005_2205.insert(pair<string,int>("Probistip",0));
+    goto POPOLNUVANJE;
+}
+if(golemina == 1)
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+       covid2005_2205.insert(pair<string,int>("Vinica",0));
+    covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
+    covid2005_2205.insert(pair<string,int>("Pehcevo",0));
+    covid2005_2205.insert(pair<string,int>("Probistip",0));
+    covid2005_2205.insert(pair<string,int>("Valandovo",0));
+    goto POPOLNUVANJE;
+}
+if(golemina == 0)
+{
+    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+    covid2005_2205.insert(pair<string,int>("Vinica",0));
+    covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
+    covid2005_2205.insert(pair<string,int>("Pehcevo",0));
+    covid2005_2205.insert(pair<string,int>("Probistip",0));
+    covid2005_2205.insert(pair<string,int>("Valandovo",0));
+    covid2005_2205.insert(pair<string,int>("Bogdanci",0));
+    goto POPOLNUVANJE;
+}
+POPOLNUVANJE: // label za popolnuvanje na mapa
   cout<<"Popolneta mapa: "<<endl;
- for (auto i : covid0530) // prvicno pecatenje po kluc
+ for (auto i : covid2005_2205) // prvicno pecatenje po kluc
 		std::cout  << i.first << " "
 				<< i.second << "\n";
 	// prazen vector od parovi
@@ -159,7 +135,7 @@ int main()
 
 	// kopiranje na klucevi i vrednost od mapa vo vektor
   map<string, int> :: iterator it2;
-  for (it2=covid0530.begin(); it2!=covid0530.end(); it2++)
+  for (it2=covid2005_2205.begin(); it2!=covid2005_2205.end(); it2++)
   {
     vec.push_back(make_pair(it2->first, it2->second));
   }
@@ -187,7 +163,7 @@ vec.push_back(make_pair(ime,datum_na_raganje));
 vec.push_back(make_pair("INKI",broj_indeks)); // vnes na parovi na kraj od vektor
 ofstream file; // kreiranje na ofstream file za zapisuvanje na podatoci
  file.open(ime + prezime + "INKI" + broj + ".txt");
- file<<"Kovid bilans za den 30.05 po broj na zaboleni"<<endl;
+ file<<"Kovid bilans pomegu 20.05 i 22.05, po broj na zaboleni"<<endl;
 for (int i = 0; i < vec.size(); i++)
 	{
 		file << vec[i].first << ": " << vec[i].second << endl;
