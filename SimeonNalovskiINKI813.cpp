@@ -177,16 +177,14 @@ int main()
     string ime;
     string prezime;
     int broj_indeks;
-    int datum_na_raganje;
-string broj = to_string((int) broj_indeks); // pretvoranje na broj na indeks vo string
-
-
+    int datum_na_raganje; // stringovi za podatoci na student
 
 cout<<"Vnesi ime i prezime  ";cin>>ime>>prezime;cout<<endl;
 cout<<"Vnesi cifri na broj na indeks: ";cin>>broj_indeks;
+string broj = to_string((int) broj_indeks); // pretvoranje na broj na indeks vo string
 cout<<"Vnesi datum na raganje: ";cin>>datum_na_raganje;
 vec.push_back(make_pair(ime,datum_na_raganje));
-vec.push_back(make_pair("INKI",broj_indeks));
+vec.push_back(make_pair("INKI",broj_indeks)); // vnes na parovi na kraj od vektor
 ofstream file; // kreiranje na ofstream file za zapisuvanje na podatoci
  file.open(ime + prezime + "INKI" + broj + ".txt");
  file<<"Kovid bilans za den 30.05 po broj na zaboleni"<<endl;
