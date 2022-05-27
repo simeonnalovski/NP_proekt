@@ -25,95 +25,86 @@ int main()
     
 	map<string, int> covid2005_2205 = {
 		{"Skopje",95},{"Bitola",18},{"Prilep",3},{"Stip",5},{"Debar",1},
-        {"Kumanovo",5},{"Ohrid",8},{"Delcevo",2},//{"Tetovo",3},{"Sveti Nikole",1}
+        {"Kumanovo",5},{"Ohrid",8},{"Delcevo",2}//,{"Tetovo",3},{"Sveti Nikole",1}
 	};//mapa so inicializirani vrednosti
     //ako se isprisat dvete kosi crti levo od Tetovo, mapata ke gi sodrzi Tetovo i Sveti Nikole, bez dopolnuvanje so gradovi so 0 zaboleni
 int golemina = covid2005_2205.size(); // golemina na mapa, za vo slucaj da treba da se dopolnat gradovi so broj na zaboleni 0
-if(golemina == 9) // if ciklus, za vo slucaj na dopolnuvanje
+switch (golemina) // switch case za eventualno dopolnuvanje na mapa
 {
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0)); // dopolnuvanje spored par na kluc i vrednost
-    goto POPOLNUVANJE; // bezusloven skok do labela za popolnuvanje (linija 87)
-}
-if(golemina == 8)
-{
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+case 9:
+   covid2005_2205.insert(pair<string,int>("Demir Hisar",0)); // par za dopolnuvanje na mapa
+    goto POPOLNUVANJE; // bezusloven skok do labela
+ 
+ case 8:
+   covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
     covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
-    goto POPOLNUVANJE;
-}
-if(golemina == 7)
-{
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
-    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
-    covid2005_2205.insert(pair<string,int>("Veles",0));
-    goto POPOLNUVANJE;
-}
-if(golemina == 6)
-{
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
-    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
-    covid2005_2205.insert(pair<string,int>("Krusevo",0));
-    covid2005_2205.insert(pair<string,int>("Gostivar",0));
-    goto POPOLNUVANJE;
-}
-if(golemina == 5)
-{
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
-    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
-    covid2005_2205.insert(pair<string,int>("Krusevo",0));
-    covid2005_2205.insert(pair<string,int>("Gostivar",0));
-       covid2005_2205.insert(pair<string,int>("Vinica",0));
-    goto POPOLNUVANJE;
-}
-if(golemina == 4)
-{
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
-    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
-    covid2005_2205.insert(pair<string,int>("Krusevo",0));
-    covid2005_2205.insert(pair<string,int>("Gostivar",0));
-       covid2005_2205.insert(pair<string,int>("Vinica",0));
-    covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
+  goto POPOLNUVANJE;
 
-}
-if(golemina == 3)
-{
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+case 7:
+  covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    goto POPOLNUVANJE;
+
+case 6:
+  covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
     covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
     covid2005_2205.insert(pair<string,int>("Krusevo",0));
     covid2005_2205.insert(pair<string,int>("Gostivar",0));
-       covid2005_2205.insert(pair<string,int>("Vinica",0));
+    goto POPOLNUVANJE;
+
+case 5:
+  covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+    covid2005_2205.insert(pair<string,int>("Vinica",0));
+    goto POPOLNUVANJE;   
+
+ case 4:
+   covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+    covid2005_2205.insert(pair<string,int>("Vinica",0));
+    covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
+    goto POPOLNUVANJE;
+
+case 3:
+  covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+    covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
+    covid2005_2205.insert(pair<string,int>("Krusevo",0));
+    covid2005_2205.insert(pair<string,int>("Gostivar",0));
+    covid2005_2205.insert(pair<string,int>("Vinica",0));
     covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
     covid2005_2205.insert(pair<string,int>("Pehcevo",0));
-
     goto POPOLNUVANJE;
-}
-if(golemina == 2)
-{
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+
+case 2:
+  covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
     covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
     covid2005_2205.insert(pair<string,int>("Krusevo",0));
     covid2005_2205.insert(pair<string,int>("Gostivar",0));
-       covid2005_2205.insert(pair<string,int>("Vinica",0));
+    covid2005_2205.insert(pair<string,int>("Vinica",0));
     covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
     covid2005_2205.insert(pair<string,int>("Pehcevo",0));
     covid2005_2205.insert(pair<string,int>("Probistip",0));
     goto POPOLNUVANJE;
-}
-if(golemina == 1)
-{
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+
+case 1:    
+  covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
     covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
     covid2005_2205.insert(pair<string,int>("Krusevo",0));
     covid2005_2205.insert(pair<string,int>("Gostivar",0));
-       covid2005_2205.insert(pair<string,int>("Vinica",0));
+    covid2005_2205.insert(pair<string,int>("Vinica",0));
     covid2005_2205.insert(pair<string,int>("Makedonska Kamenica",0));
     covid2005_2205.insert(pair<string,int>("Pehcevo",0));
     covid2005_2205.insert(pair<string,int>("Probistip",0));
     covid2005_2205.insert(pair<string,int>("Valandovo",0));
     goto POPOLNUVANJE;
-}
-if(golemina == 0)
-{
-    covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
+
+case 0:
+  covid2005_2205.insert(pair<string,int>("Demir Hisar",0));
     covid2005_2205.insert(pair<string,int>("Demir Kapija",0));
     covid2005_2205.insert(pair<string,int>("Krusevo",0));
     covid2005_2205.insert(pair<string,int>("Gostivar",0));
@@ -124,7 +115,11 @@ if(golemina == 0)
     covid2005_2205.insert(pair<string,int>("Valandovo",0));
     covid2005_2205.insert(pair<string,int>("Bogdanci",0));
     goto POPOLNUVANJE;
+
+default:// default za "neposakuvana vrednost" t.e. golemina > 10 ili golemina = na 10
+    goto POPOLNUVANJE;
 }
+
 POPOLNUVANJE: // label za popolnuvanje na mapa
   cout<<"Popolneta mapa: "<<endl;
  for (auto i : covid2005_2205) // prvicno pecatenje po kluc
